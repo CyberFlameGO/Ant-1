@@ -53,5 +53,8 @@ int handle() {
     memcpy(req2 + 5, domain, domain_len);
     memcpy(req2 + 5 + domain_len, &port, 2);
     send(sck, (char *) req2, 4 + 1 + domain_len + 2, MSG_OOB);
+}
 
+int main(){
+    handle();
 }
