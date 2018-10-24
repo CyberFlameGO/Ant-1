@@ -17,7 +17,7 @@ typedef int socket;
 #include <stdio.h>
 #include <afxres.h>
 
-int main() {
+int handle() {
     printf("[+] Ant starting up...");
     printf("[+] Attempting to make connection");
 
